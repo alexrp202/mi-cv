@@ -5,18 +5,24 @@ const Experience = () => {
     {
       title: "Desarrollador",
       company: "Universidad de Lleida",
-      year: "2021",
+      year: "2024",
+      Experience:
+        "Desarrollo y mantenimiento de aplicaciones web con HTML, CSS y JavaScript, incluyendo mejoras en páginas del campus online de la Universidad de Lleida. Automatización de tareas en procesos administrativos de la universidad mediante scripts en Python y modelado de flujos de trabajo en Tangram BPM.",
     },
 
     {
       title: "Prácticas de desarrollo Data Analyst",
       company: "Group Saltó",
       year: "2021",
+      Experience:
+        "Creación de informes interactivos con Power BI, SQL y Excel, permitiendo el análisis reactivo de datos clave para la toma de decisiones. Modelado y optimización de procesos internos usando un programa de BPM propio de la empresa.",
     },
     {
       title: "Prácticas HelpDesk ",
       company: "Indra",
       year: "2018",
+      Experience:
+        "Soporte a usuarios de la Generalitat, resolviendo incidencias relacionadas con procesos administrativos, problemas con equipos y otras dificultades técnicas, a través de correo, teléfono y control remoto.",
     },
   ];
 
@@ -31,6 +37,8 @@ const Experience = () => {
                 {job.title} - {job.company}
               </h4>
               <span>{job.year}</span>
+              <br />
+              <span>{job.Experience}</span>
             </ListGroup.Item>
           ))}
         </ListGroup>
