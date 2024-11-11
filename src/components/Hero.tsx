@@ -5,14 +5,14 @@ const Hero = () => {
     <section id="hero" className="text-center  py-5 mt-4">
       <Container>
         <img
-          src="./src/assets/foto.jpg"
+          src="foto.jpg"
           alt="Mi Foto"
           className="rounded-circle mb-3"
           width="150"
         />
         <h2>¡Hola! Soy Alex</h2>
         <p className="lead">Desarrollador de software</p>
-        <Button variant="primary" href="./src/assets/Curriculum.pdf">
+        <Button variant="primary" href="Curriculum.pdf">
           Descargar CV
         </Button>
       </Container>

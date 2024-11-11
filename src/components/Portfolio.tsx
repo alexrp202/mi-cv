@@ -3,11 +3,6 @@ import "./Contact.css";
 const Portfolio = () => {
   const projects = [
     {
-      name: "Proyecto 1",
-      description: "Descripción del proyecto 1",
-      link: "#",
-    },
-    {
       name: "Web Outlet Demoto",
       description:
         "Desarrollé el sitio web para Demoto, una empresa de venta de accesorios y repuestos para motos en Lleida, utilizando WordPress como plataforma. Me encargué de todo el proceso, desde la personalización del diseño y funcionalidad en WordPress hasta la gestión del alojamiento y la compra del dominio. La web está optimizada para ofrecer una experiencia de usuario intuitiva y un rendimiento eficiente",
