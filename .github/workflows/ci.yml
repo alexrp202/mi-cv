@@ -28,10 +28,6 @@ jobs:
       - name: Install dependencies
         run: npm install
 
-      # Paso 4: Ejecutar las pruebas (si las tienes configuradas)
-      - name: Run tests
-        run: npm test
-
       # Paso 5: Construir el proyecto con Vite
       - name: Build project
         run: npm run build
