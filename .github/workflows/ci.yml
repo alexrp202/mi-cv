@@ -1,0 +1,42 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches:
+      - main
+      - feature/*
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  # Usa un entorno de Ubuntu para el CI
+
+    steps:
+      # Paso 1: Check-out el código
+      - name: Check out repository
+        uses: actions/checkout@v3
+
+      # Paso 2: Configurar Node.js (ajustar la versión según la que uses en tu proyecto)
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'  # o la versión que estés usando
+
+      # Paso 3: Instalar dependencias
+      - name: Install dependencies
+        run: npm install
+
+      # Paso 4: Ejecutar las pruebas (si las tienes configuradas)
+      - name: Run tests
+        run: npm test
+
+      # Paso 5: Construir el proyecto con Vite
+      - name: Build project
+        run: npm run build
+      
+      # Paso 6: Opcional, si quieres desplegar en GitHub Pages
+      # Si tienes un script para desplegar en GitHub Pages
+      - name: Deploy to GitHub Pages
+        run: npm run deploy
