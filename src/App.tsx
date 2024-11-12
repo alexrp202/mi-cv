@@ -2,7 +2,6 @@
 import React from "react";
 import Header from "./components/Header";
 import Experience from "./components/Experience";
-import Skills from "./components/Skills";
 import Portfolio from "./components/Portfolio";
 import FadeInSection from "./components/FadeInSection";
 import "./App.css";
@@ -20,12 +19,10 @@ const App: React.FC = () => {
       <FadeInSection>
         <Experience />
       </FadeInSection>
-      {/* <FadeInSection>
-        <Skills />
-      </FadeInSection>
+
       <FadeInSection>
         <Portfolio />
-      </FadeInSection>  */}
+      </FadeInSection>
     </div>
   );
 };

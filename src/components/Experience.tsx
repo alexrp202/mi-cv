@@ -1,5 +1,5 @@
 import { Container, Accordion, Row, Col } from "react-bootstrap";
-import React, { useState } from "react";
+import { useState } from "react";
 
 import "./Aboutme.css";
 const Experience = () => {
