@@ -4,7 +4,7 @@ import "./Aboutme.css"; // Importamos el archivo CSS
 import Contact from "./Contact";
 
 const Aboutme = () => {
-  const [greeting, setGreeting] = useState<string>("Hola");
+  const [greeting, setGreeting] = useState<string>("Hola,");
   const [animate, setAnimate] = useState<boolean>(false);
 
   // Añadimos los nuevos saludos en alemán y chino
@@ -12,8 +12,8 @@ const Aboutme = () => {
     es: "Hola,",
     en: "Hello,",
     fr: "Bonjour,",
-    de: "Hallo,", // Alemán
-    zh: "你好,", // Chino
+    de: "Hallo,",
+    zh: "你好,",
   };
 
   useEffect(() => {
@@ -63,12 +63,12 @@ const Aboutme = () => {
               >
                 {greeting}
               </span>{" "}
-              soy un <br /> Desarrollador{" "}
+              soy <br /> Desarrollador{" "}
               <span style={{ color: "green" }}>Software</span>
             </h1>
-            <p style={{ fontSize: "1.5rem", color: "gray" }}>
-              Me apasiona crear soluciones digitales y trabajar con tecnologías
-              innovadoras.
+            <p style={{ fontSize: "1.2rem", color: "gray" }}>
+              Soy Alex, y me apasiona combinar diseño y programación para crear
+              experiencias digitales innovadoras y funcionales.
             </p>
             <p>
               <Contact />

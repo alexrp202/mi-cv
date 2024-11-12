@@ -14,12 +14,11 @@ const Skills = () => {
   ];
 
   return (
-    <section id="skills" className="py-5">
+    <section id="skills" className="pt-0">
       <Container>
-        <h2 className="text-center mb-4">Habilidades</h2>
         <div className="d-flex justify-content-center flex-wrap">
           {skills.map((skill, index) => (
-            <Badge key={index} pill bg="primary" className="m-2">
+            <Badge key={index} pill bg="success" className="m-2">
               {skill}
             </Badge>
           ))}
