@@ -3,7 +3,7 @@ import "./Aboutme.css"; // Importamos el archivo CSS
 import Skills from "./Skills";
 const info = () => {
   return (
-    <section id="hero" className="pt-0 ">
+    <section id="info" className="pt-0 ">
       <Container
         fluid
         className="d-flex justify-content-center align-items-center"

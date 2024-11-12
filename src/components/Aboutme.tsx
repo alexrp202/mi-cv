@@ -46,7 +46,7 @@ const Aboutme = () => {
   }, [animate]); // Cada vez que el estado animate cambie
 
   return (
-    <section id="hero" className="py-5 mt-5">
+    <section id="about" className="py-5 mt-5">
       <Container
         fluid
         className="d-flex justify-content-center align-items-center"

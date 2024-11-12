@@ -32,4 +32,28 @@
   color: #333; /* Color oscuro para mejorar la visibilidad */
   margin-bottom: 20px;
 }
+/* Estilo para los items del Accordion */
+.accordion-button:not(.collapsed) {
+  background-color: #007bff;
+  color: white;
+}
 
+/* Estilo para el hover (opcional si no lo necesitas) */
+.accordion-item:hover {
+  background-color: #f8f9fa;
+}
+
+.nav-text{
+  font-size: 1.3rem; /* Aumentamos el tamaño del texto */
+  font-weight: bold;
+  text-align: center; /* Centramos el texto */
+  color: #333; /* Color oscuro para mejorar la visibilidad */
+  margin-bottom: 20px;
+  cursor: pointer;
+
+}
+.nav-text,
+.nav-text:hover {
+  text-decoration: none !important;
+  
+}

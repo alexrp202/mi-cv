@@ -1,5 +1,5 @@
 import { Card, Container, Row, Col } from "react-bootstrap";
-import { BsEnvelopeFill, BsLinkedin } from "react-icons/bs";
+import { BsEnvelopeFill, BsLinkedin, BsFileEarmarkText } from "react-icons/bs";
 import "./Contact.css";
 
 const Contact = () => {
@@ -20,10 +20,10 @@ const Contact = () => {
           </a>
         </Col>
         <Col className="mb-5">
-          <a href="" className="card-link">
+          <a target="_blank" href="Curriculum.pdf" className="card-link">
             <Card className="text-center shadow-sm  bg-white rounded hover-card">
               <Card.Body>
-                <BsLinkedin size={40} className="icon-green mb-3" />
+                <BsFileEarmarkText size={40} className="icon-green mb-3" />
                 <Card.Title>CV</Card.Title>
                 <Card.Text></Card.Text>
               </Card.Body>
@@ -31,11 +31,15 @@ const Contact = () => {
           </a>
         </Col>
         <Col className="mb-5">
-          <a href="" className="card-link">
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/alex-rodriguez-1b64b0258/"
+            className="card-link"
+          >
             <Card className="text-center shadow-sm  bg-white rounded hover-card">
               <Card.Body>
                 <BsLinkedin size={40} className="icon-green mb-3" />
-                <Card.Title>Linkedin</Card.Title>
+                <Card.Title>LinkedIn</Card.Title>
                 <Card.Text></Card.Text>
               </Card.Body>
             </Card>

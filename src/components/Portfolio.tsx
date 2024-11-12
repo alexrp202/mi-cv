@@ -1,5 +1,6 @@
 import { Container, Card, Row, Col } from "react-bootstrap";
 import "./Contact.css";
+import "./Aboutme.css";
 const Portfolio = () => {
   const projects = [
     {
@@ -13,14 +14,18 @@ const Portfolio = () => {
   return (
     <section id="portfolio" className="py-5 bg-light">
       <Container>
-        <h2 className="text-center mb-4">Portafolio</h2>
+        <h2 className="greeting-text" style={{ marginLeft: "20px" }}>
+          Portafolio
+        </h2>{" "}
         <Row>
           {projects.map((project, index) => (
             <Col md={6} key={index} className="mb-4">
               <a className="card-link" href={project.link}>
                 <Card className="rounded hover-card">
                   <Card.Body>
-                    <Card.Title>{project.name}</Card.Title>
+                    <Card.Title className="greeting-text">
+                      {project.name}
+                    </Card.Title>
                     <Card.Text>
                       {project.description.split("\n").map((line, index) => (
                         <p key={index}>{line}</p>
