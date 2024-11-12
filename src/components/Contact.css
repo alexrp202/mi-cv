@@ -7,17 +7,19 @@
 
 .hover-card {
   transition: transform 0.2s ease, box-shadow 0.2s ease; /* Suaviza la transición */
-  
 }
 
 .hover-card:hover {
   transform: scale(1.05); /* Agranda ligeramente la tarjeta al hacer hover */
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Aumenta la sombra en hover */
 }
+.card-body {
+  min-width: 130px;
+}
 .icon-green {
+  font-size: 40px; /* Tamaño en pantallas grandes */
   color: green;
 }
-
-.card-body{
-  min-width: 130px; 
+.contact .card {
+  border: none !important;
 }

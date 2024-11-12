@@ -13,9 +13,10 @@
 
 /* Estilo para la palabra "Hola" */
 .greeting {
-  font-size: 4rem; /* Aumentamos el tamaño de la palabra "Hola" */
+  font-size: 4rem; /* Tamaño grande para pantallas grandes */
   font-weight: bold;
   display: inline-block;
+  color: green;
   transition: transform 1s ease-out, opacity 1s ease-out;
 }
 
@@ -26,12 +27,45 @@
 
 /* Estilo para el texto principal (Hola, soy un Desarrollador) */
 .greeting-text {
-  font-size: 4rem; /* Aumentamos el tamaño del texto */
+  font-size: 4rem; /* Tamaño grande por defecto */
   font-weight: bold;
-  text-align: center; /* Centramos el texto */
-  color: #333; /* Color oscuro para mejorar la visibilidad */
+  text-align: center;
+  color: #333;
   margin-bottom: 20px;
 }
+
+/* Ajustes responsivos */
+
+/* Pantallas medianas (tabletas) */
+@media (max-width: 992px) {
+  .greeting-text {
+    font-size: 3rem; /* Disminuye un poco en tabletas */
+  }
+  .greeting {
+    font-size: 3rem;
+  }
+}
+
+/* Pantallas pequeñas (móviles) */
+@media (max-width: 768px) {
+  .greeting-text {
+    font-size: 2.5rem; /* Tamaño más pequeño en móviles */
+  }
+  .greeting {
+    font-size: 2.5rem;
+  }
+}
+
+/* Pantallas muy pequeñas (móviles en orientación vertical) */
+@media (max-width: 576px) {
+  .greeting-text {
+    font-size: 2rem; /* Texto aún más pequeño en pantallas muy pequeñas */
+  }
+  .greeting {
+    font-size: 2rem;
+  }
+}
+
 /* Estilo para los items del Accordion */
 .accordion-button:not(.collapsed) {
   background-color: #007bff;
@@ -43,17 +77,19 @@
   background-color: #f8f9fa;
 }
 
-.nav-text{
+.nav-text {
   font-size: 1.3rem; /* Aumentamos el tamaño del texto */
   font-weight: bold;
   text-align: center; /* Centramos el texto */
   color: #333; /* Color oscuro para mejorar la visibilidad */
   margin-bottom: 20px;
   cursor: pointer;
-
 }
 .nav-text,
 .nav-text:hover {
   text-decoration: none !important;
-  
+}
+.navbar {
+  width: 100%;
+  overflow: hidden; /* Evita cualquier desbordamiento */
 }

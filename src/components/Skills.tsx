@@ -11,6 +11,8 @@ const Skills = () => {
     "Typescript",
     "SQL",
     "Java",
+    "Git",
+    "Bootstrap",
   ];
 
   return (

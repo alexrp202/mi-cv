@@ -12,21 +12,21 @@ const Portfolio = () => {
   ];
 
   return (
-    <section id="portfolio" className="py-5 bg-light">
+    <section id="portfolio" className="py-5 ">
       <Container>
         <h2 className="greeting-text" style={{ marginLeft: "20px" }}>
           Portafolio
         </h2>{" "}
         <Row>
           {projects.map((project, index) => (
-            <Col md={6} key={index} className="mb-4">
+            <Col key={index} className="mb-4">
               <a className="card-link" href={project.link}>
                 <Card className="rounded hover-card">
                   <Card.Body>
                     <Card.Title className="greeting-text">
                       {project.name}
                     </Card.Title>
-                    <Card.Text>
+                    <Card.Text style={{ fontSize: "1.4rem", color: "gray" }}>
                       {project.description.split("\n").map((line, index) => (
                         <p key={index}>{line}</p>
                       ))}

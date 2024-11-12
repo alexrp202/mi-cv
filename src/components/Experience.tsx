@@ -27,7 +27,7 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-5 bg-light">
+    <section id="experience" className="py-5">
       <Container
         fluid
         className="d-flex justify-content-center align-items-center"
@@ -51,7 +51,9 @@ const Experience = () => {
                         {job.title} - {job.company} ({job.year})
                       </h4>
                     </Accordion.Header>
-                    <Accordion.Body>
+                    <Accordion.Body
+                      style={{ fontSize: "1.4rem", color: "gray" }}
+                    >
                       {job.Experience.split("\n").map((line, lineIndex) => (
                         <p key={lineIndex}>{line}</p>
                       ))}

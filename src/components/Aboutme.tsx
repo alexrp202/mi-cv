@@ -54,7 +54,7 @@ const Aboutme = () => {
         <Row className="w-100">
           <Col
             md={7}
-            className="d-flex mt-5  flex-column align-items-center justify-content-center text-center"
+            className="d-flex mt-5 flex-column align-items-center justify-content-center text-center"
           >
             {/* Aplicamos la animación "slideDown" solo a la palabra "Hola" */}
             <h1 className="greeting-text" style={{ marginLeft: "20px" }}>
@@ -66,7 +66,7 @@ const Aboutme = () => {
               soy <br /> Desarrollador{" "}
               <span style={{ color: "green" }}>Software</span>
             </h1>
-            <p style={{ fontSize: "1.2rem", color: "gray" }}>
+            <p style={{ fontSize: "1.4rem", color: "gray" }}>
               Soy Alex, y me apasiona combinar diseño y programación para crear
               experiencias digitales innovadoras y funcionales.
             </p>

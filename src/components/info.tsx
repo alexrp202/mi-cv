@@ -28,7 +28,7 @@ const info = () => {
             <h2 className="greeting-text" style={{ marginLeft: "20px" }}>
               Sobre mi
             </h2>
-            <p style={{ fontSize: "1rem", color: "gray" }}>
+            <p style={{ fontSize: "1.4rem", color: "gray" }}>
               Soy un desarrollador entusiasta de la tecnología, siempre en
               búsqueda de nuevas soluciones y formas de optimizar procesos. Me
               apasiona aprender y enfrentar desafíos, lo que me impulsa a
