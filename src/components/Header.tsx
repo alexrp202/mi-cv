@@ -10,8 +10,6 @@ const Header = () => {
           duration={700}
           style={{ color: "green" }}
           to="about"
-          smooth={true}
-          duration={700}
           className="nav-left-text nav-text"
         >
           Alex Rodriguez{" "}
