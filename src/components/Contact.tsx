@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { Card, Container, Row, Col } from "react-bootstrap";
 import { BsEnvelopeFill, BsLinkedin } from "react-icons/bs";
 import "./Contact.css";
