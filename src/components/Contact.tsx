@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Card, Container, Row, Col, Button } from "react-bootstrap";
+import { Card, Container, Row, Col } from "react-bootstrap";
 import { BsEnvelopeFill, BsLinkedin } from "react-icons/bs";
 import "./Contact.css";
 
@@ -26,13 +26,10 @@ const Contact = () => {
           </a>
         </Col>
         <Col>
-          <Button>
-            <BsLinkedin size={40} className="icon-green mb-3  " />
-          </Button>
           <a href="" className="card-link">
             <Card className="text-center shadow-sm p-3 mb-5 bg-white rounded hover-card">
               <Card.Body>
-                <BsLinkedin size={40} className="icon-green mb-3  " />
+                <BsLinkedin size={40} className="icon-green mb-3" />
                 <Card.Title>Linkedin</Card.Title>
                 <Card.Text></Card.Text>
               </Card.Body>
