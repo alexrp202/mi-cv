@@ -7,13 +7,14 @@ import Skills from "./components/Skills";
 import Portfolio from "./components/Portfolio";
 import FadeInSection from "./components/FadeInSection";
 import "./App.css";
-import Contactme from "./components/Contactme";
+import Aboutme from "./components/Aboutme";
+
 const App: React.FC = () => {
   return (
     <div className="App">
       <Header />
       <FadeInSection>
-        <Contactme />
+        <Aboutme />
       </FadeInSection>
       <FadeInSection>
         <About />

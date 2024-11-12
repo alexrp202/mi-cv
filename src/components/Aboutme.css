@@ -1,0 +1,41 @@
+/* Archivo Aboutme.css */
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Estilo para la palabra "Hola" */
+.greeting {
+  font-size: 4rem; /* Aumentamos el tamaño de la palabra "Hola" */
+  font-weight: bold;
+  display: inline-block;
+  transition: transform 1s ease-out, opacity 1s ease-out;
+}
+
+/* Animación para "Hola" */
+.greeting.slideDown {
+  animation: slideDown 1s ease-out;
+}
+
+/* Estilo para el texto principal (Hola, soy un Desarrollador) */
+.greeting-text {
+  font-size: 4rem; /* Aumentamos el tamaño del texto */
+  font-weight: bold;
+  text-align: center; /* Centramos el texto */
+  color: #333; /* Color oscuro para mejorar la visibilidad */
+  margin-bottom: 20px;
+}
+
+/* Añadimos mayor tamaño y espacio para la descripción */
+p {
+  font-size: 1.5rem; /* Tamaño más grande para el texto de abajo */
+  color: gray;
+  text-align: center;
+}
